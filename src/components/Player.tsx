@@ -1,20 +1,62 @@
-import React from "react";
+import { Fragment } from "react";
+import './Player.css'
 
 
-const Player = (props) => {
+const Player = ({ landscape, square, portrait }) => {
     return (
-        <div>
-            <video
-                controls
-                width="250"
-                src={props.videoSrc}>
-            </video>
+        <Fragment>
+            <div className="player-card">
+                <div className="player"><video
+                    controls
+                    autoPlay
+                    width="100%"
+                    height="100%"
+                    src={landscape}>
+                </video>
 
-            <a href={props.videoSrc} download="sample">
-                <button type="button">Download</button>
-            </a>
+                    <a href={landscape} download="sample">
+                        <button
+                            className='download-btn'
+                            type="button">Download</button>
+                    </a>
+                </div>
 
-        </div>
+                <div className="player">
+                    <video
+                        controls
+                        autoPlay
+                        width="100%"
+                        height="100%"
+                        src={square}>
+                    </video>
+
+                    <a href={square} download="sample">
+                        <button className='download-btn'
+                            type="button">Download</button>
+                    </a>
+
+                </div>
+
+                <div className="player">
+                    <video
+                        controls
+                        autoPlay
+                        width="100%"
+                        height="100%"
+                        src={portrait}>
+                    </video>
+
+                    <a href={portrait} download="sample">
+                        <button
+                            className='download-btn' type="button">Download</button>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+        </Fragment >
     )
 }
 
