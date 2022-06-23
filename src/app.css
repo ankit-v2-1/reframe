@@ -1,0 +1,57 @@
+.tool-card {
+    background-color: white;
+    width: 550px;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.preview-card {
+    background-color: #edf2f7;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    width: 426px;
+    height: 240px;
+    position: static;
+}
+
+video:focus {
+    outline: none;
+}
+
+.progress-div {
+    font-weight: bold;
+    text-align: center;
+    color: #464646;
+    margin: 40px 20px;
+}
+
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgb(218, 218, 218);
+    border-bottom-color: #f55e30;
+    border-radius: 50%;
+    position: fixed;
+    left: 48%;
+    top: 48%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

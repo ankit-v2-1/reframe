@@ -1,0 +1,39 @@
+.player-card {
+
+    background-color: white;
+    width: 90%;
+    height: 38%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+video:focus {
+    outline: none;
+}
+
+.player {
+    background-color: whie;
+    position: static;
+    width: 426px;
+    height: 90%;
+    margin: 10px;
+    border: 2px solid white;
+
+}
+
+.download-btn {
+    text-transform: uppercase;
+    background: #464646;
+    width: 40%;
+    border: 5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 125px;
+
+}

@@ -1,0 +1,35 @@
+.trim-tool {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 30%;
+    height: 43px;
+    border: 4;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+button {
+
+    text-transform: uppercase;
+    outline: 0;
+    background: #464646;
+    height: 43px;
+    width: 30%;
+    border: 4;
+    border-style: inset;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+
+}
