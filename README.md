@@ -37,6 +37,9 @@ web app that resize and trim videos into different ratio!
   </p>
 </p>
 
+## Project Description
+
+This project was assigned to me as a Take home assessment for full stack role.
 
 
 ## Running the app locally
