@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-gray.png';
 import './Header.css';
 
 let Header = () => {
