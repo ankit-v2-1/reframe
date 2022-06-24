@@ -8,7 +8,7 @@ const Trim = ({ ffmpeg, start, end, setTrimedVideo, setStart, setEnd, video, set
     const trimVideo = async () => {
         ffmpeg.FS('writeFile', 'input', await fetchFile(video));
         ffmpeg.setProgress(({ ratio }) => {
-            setProgress(Math.round((ratio + Number.EPSILON) * 100) / 100);
+            setProgress(Math.round((ratio + Number.EPSILON) * 100) / 100 * 100);
             console.log(ratio);
         });
 
