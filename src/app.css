@@ -36,7 +36,7 @@ video:focus {
     width: 48px;
     height: 48px;
     border: 5px solid rgb(218, 218, 218);
-    border-bottom-color: #f55e30;
+    border-bottom-color: #464646;
     border-radius: 50%;
     position: fixed;
     left: 48%;
