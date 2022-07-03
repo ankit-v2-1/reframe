@@ -1,14 +1,10 @@
 .player-card {
-
-    background-color: white;
-    width: 90%;
-    height: 38%;
-    position: absolute;
-    top: 25%;
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-
+    background-color: #edf2f7;
+    margin: 10% auto;
+    margin-bottom: 50px;
+    width: 426px;
+    height: 240px;
+    position: static;
 }
 
 video:focus {
@@ -16,12 +12,12 @@ video:focus {
 }
 
 .player {
-    background-color: whie;
-    position: static;
+    background-color: #edf2f7;
+    margin: 20px auto;
+    margin-bottom: 50px;
     width: 426px;
-    height: 90%;
-    margin: 10px;
-    border: 2px solid white;
+    height: 240px;
+    position: static;
 
 }
 

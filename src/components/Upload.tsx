@@ -21,7 +21,7 @@ const Upload = ({ setVideo }) => {
                 onChange={updateInput}
             />
             <button
-                className='upload-btn'>Upload</button>
+                className='upload-btn'>Select Video</button>
             <div className='upload-info'>
                 <p className="main">Supported files</p>
                 <p className="info">mp4, avi, mov </p>
