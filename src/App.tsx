@@ -15,11 +15,10 @@ function App() {
   const [ready, setReady] = useState(false);
   const [video, setVideo] = useState<any>();
   const [trimedVideo, setTrimedVideo] = useState('');
-  const [style, setStyle] = useState('cropping');
+  const [output, setOutput] = useState('');
 
-  const [landscape, setLandscape] = useState('');
-  const [square, setSquare] = useState('');
-  const [portrait, setPortrait] = useState('');
+  const [style, setStyle] = useState('cropping');
+  const [ratio, setRatio] = useState('landscape');
 
   const [start, setStart] = useState('');
   const [end, setEnd] = useState('');
@@ -47,9 +46,9 @@ function App() {
 
       {ready ? (
         <>
-          {landscape ? (
+          {output ? (
             <>
-              <Player landscape={landscape} square={square} portrait={portrait} />
+              <Player output={output} />
             </>
 
           ) : (
@@ -92,10 +91,11 @@ function App() {
                         ffmpeg={ffmpeg}
                         trimedVideo={trimedVideo}
                         style={style}
-                        setLandscape={setLandscape}
-                        setSquare={setSquare}
-                        setPortrait={setPortrait}
                         setStyle={setStyle}
+                        ratio={ratio}
+                        setRatio={setRatio}
+                        output={output}
+                        setOutput={setOutput}
                         video={video}
                         setProgress={setProgress} />
                     </div>
